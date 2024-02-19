@@ -80,7 +80,7 @@ const defaultTheme = createTheme();
 
 export default function Dashboard() {
   const [open, setOpen] = React.useState(true);
-  const [content, setContent] = React.useState("Orders");
+ 
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -159,7 +159,7 @@ export default function Dashboard() {
                   color: "#76b4ff",
                 },
               }}
-              onClick={() => setContent("Dashboard")}
+           
             >
               <ListItemIcon sx={{ minWidth: 0 }}>
                 <AiOutlineDashboard color="#000" />
@@ -176,7 +176,7 @@ export default function Dashboard() {
                   color: "#76b4ff",
                 },
               }}
-              onClick={() => setContent("Inventory")}
+             
             >
               <ListItemIcon sx={{ minWidth: 0 }}>
                 <IoPricetagOutline color="#000" />
@@ -193,7 +193,7 @@ export default function Dashboard() {
                   color: "#76b4ff",
                 },
               }}
-              onClick={() => setContent("Orders")}
+             
             >
               <ListItemIcon sx={{ minWidth: 0 }}>
                 <TiClipboard color="#000" />
@@ -210,7 +210,7 @@ export default function Dashboard() {
                   color: "#76b4ff",
                 },
               }}
-              onClick={() => setContent("Shipping")}
+           
             >
               <ListItemIcon sx={{ minWidth: 0 }}>
                 <MdOutlineLocalShipping color="#000" />
@@ -227,7 +227,7 @@ export default function Dashboard() {
                   color: "#76b4ff",
                 },
               }}
-              onClick={() => setContent("Channel")}
+           
             >
               <ListItemIcon sx={{ minWidth: 0 }}>
                 <IoShareSocialOutline color="#000" />
